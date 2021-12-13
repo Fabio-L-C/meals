@@ -29,8 +29,8 @@ class MyApp extends StatelessWidget {
         canvasColor: const Color.fromRGBO(255, 254, 229, 1),
       ),
       routes: {
-        AppRoute.HOME: (cts) =>  const CategoriesScreen(),
-        AppRoute.CATEGORIES_MEALS: (ctx) => CategoriesMealsScreen(),
+        AppRoute.HOME: (cts) => const CategoriesScreen(),
+        AppRoute.CATEGORIES_MEALS: (ctx) => const CategoriesMealsScreen(),
         AppRoute.MEALS_DETAIL: (ctx) => const MealDetailScreen(),
       },
     );
