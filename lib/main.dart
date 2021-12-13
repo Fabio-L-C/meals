@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'DeliMeals',
       theme: ThemeData(
+        primarySwatch: Colors.pink,
         colorScheme: ColorScheme.fromSwatch(
           primarySwatch: Colors.pink,
         ).copyWith(
