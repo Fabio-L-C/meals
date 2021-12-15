@@ -10,10 +10,18 @@ class MealItem extends StatelessWidget {
   const MealItem(this.meal);
 
   void _selectMeal(BuildContext context) {
-    Navigator.of(context).pushNamed(
+    Navigator.of(context)
+        .pushNamed(
       AppRoute.MEALS_DETAIL,
       arguments: meal,
-    );
+    )
+        .then((value) {
+      if (value == null) {
+        print('------- * null');
+      } else {
+        print('------ $value');
+      }
+    });
   }
 
   @override

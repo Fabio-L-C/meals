@@ -108,6 +108,12 @@ class _MealDetailScreenState extends State<MealDetailScreen> {
           ],
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+        child: const Icon(Icons.star),
+        onPressed: () {
+          Navigator.of(context).pop(meal.title);
+        },
+      ),
     );
   }
 }
